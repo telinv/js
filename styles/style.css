@@ -3,6 +3,7 @@
     padding: 0;
 } */
 body{
+    display: flex;
     padding: 3%;
 }
 .cards{
@@ -26,8 +27,13 @@ body{
     padding-right: 2%;
     padding-bottom: 1%;
     margin-right: 2%;
+    position: relative;
+    z-index: 1;
     /* order: 1; */
 
+}
+.card:hover{
+    background-color: rgba(121, 200, 0, 0.4);
 }
 .img__pesticides, .img__cultures, .img__pests, .img__molecule{
     width: 130%;
@@ -35,6 +41,38 @@ body{
     grid-area: 1 / 2 / 1 / 2;
     order:0;
     padding: 0%;
+}
+.img__greenLeaf{
+    height: 35vh;
+    margin-right: -5%;
+    margin-left: -6%;
+}
+.img__yellowCircle{
+    justify-self: end;
+    position: absolute;
+    height: 50vh;  
+    z-index: 999;
+    left: 89%;
+    top: 2%;
+}
+.img__blackSpots{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -5%;
+
+}
+.img__greySpots{
+    position: absolute;
+    height: 15vh;
+    margin-top: 25%;
+    margin-left: -4%;
+}
+.img__brownLeaf{
+    position: absolute;
+    height: 13vh;
+    margin-top: 19%;
+    margin-left: 60%;
+
 }
 #card__name{
     grid-area: 2 / 1 / 2 / 1; 
