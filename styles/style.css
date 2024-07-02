@@ -1,7 +1,4 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
+
 body{
     display: flex;
     padding: 4%;
@@ -20,31 +17,60 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); 
     row-gap: 1px;
-    /* flex-wrap: nowrap; */
     align-items: end;
-    /* width: 21%; */
-    height: 123px; 
+    height: 20vh; 
+    width: 20vw;
     border: 2px solid rgba(121, 200, 0, 1);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 16px;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
     padding-left: 1%;
-    padding-right: 2%;
+    padding-right: 3%;
     padding-bottom: 1%;
+    padding-top: 2%;
     margin-right: 2%;
     position: relative;
-    z-index: 1;
-    /* order: 1; */
-
+    z-index: 15;
 }
 .card:hover{
     background-color: rgba(121, 200, 0, 0.4);
 }
+
 .img__pesticides, .img__cultures, .img__pests, .img__molecule{
     width: 130%;
-    height: 110%;
+    height: 115%;
     grid-area: 1 / 2 / 1 / 2;
     order:0;
     padding: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img__pesticides{
+    background-image: url("../assets/pesticides.png");
+    z-index: 50;
+    margin-top: 1%;
+}
+.img__pesticides:hover{
+    background-image: url("../assets/pesticides2.png");
+}
+ .img__cultures{
+    background-image: url("../assets/cultures.png");
+ }
+ .img__cultures:hover{
+    background-image: url("../assets/cultures2.png");
+ }
+.img__pests{
+    background-image: url("../assets/pests.png");
+}
+.img__pests:hover{
+    background-image: url("../assets/pests2.png");
+}
+.img__molecule{
+    background-image: url("../assets/molecule.png");
+}
+.img__molecule:hover{
+    background-image: url("../assets/molecule2.png");
 }
 .img__greenLeaf{
     height: 33vh;
@@ -55,6 +81,7 @@ body{
     -webkit-transition: top 2s;
     -moz-transition: top 2s;
     -o-transition: top 2s;  
+ 
 }
 .img__greenLeaf:hover{
     top: 10px;
@@ -67,15 +94,14 @@ body{
     justify-self: end;
     position: absolute;
     height: 50vh;  
-    z-index: 999;
+    z-index: -3;
     left: 86%;
-    top: 2%;
+    top: 15%;
 }
 .img__blackSpots{
     position: absolute;
     margin-left: 50%;
     margin-top: -5%;
-
 }
 .img__greySpots{
     position: absolute;
