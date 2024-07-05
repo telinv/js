@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flower</title>
+  </head>
+  <body>
+    <div class="container" id="login-form">
+      <img class="img__logo" src="logo.png" alt="logo" />
+      <h1>Авторизация</h1>
+      <div class="input-control">
+        <input class="input__tel" type="text" placeholder="Email или телефон" />
+      </div>
+      <div class="input-control">
+        <input class="input__password" type="password" placeholder="Пароль" />
+      </div>
+      <button class="btn__enter" type="button">Войти</button>
+      <div class="loader" id="loader"></div>
+    </div>
+    <div class="success" id="success"></div>
+    <div class="error" id="error"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
